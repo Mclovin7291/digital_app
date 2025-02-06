@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
   
-
+  runApp(const TextFieldExampleApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -46,8 +46,6 @@ class InputTextField extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
-  
-
   final String title;
 
   @override
@@ -56,7 +54,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   
-  TextEditingController _textFieldController = TextEditingController();
+  
   
 
   @override
@@ -82,7 +80,20 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
-          InputTextField(),
+        ),
+      ),
+    );
+  }
+}
+
+class TextFieldExampleApp extends StatelessWidget {
+  const TextFieldExampleApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: const Center(
+          child: InputTextField(),
         ),
       ),
     );
