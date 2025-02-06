@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
   
-  runApp(const TextFieldExampleApp());
+  //runApp(const TextFieldExampleApp());
+  //uncomment above line to see the inputbox (albeit I can't do anything w/ the output yet)
 }
 
 class MyApp extends StatelessWidget {
@@ -76,8 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'Enter a City Name:',
             ),
             Text(
-              'tempName',
-              style: Theme.of(context).textTheme.headlineMedium,
+              'Atlanta:\nMon: 16\u2103;\nTues: 16\u2103;\nWed: 16\u2103;Thur: 16\u2103;Fri: 16\u2103;Sat: 16\u2103;Sun: 16\u2103;',
             ),
           ],
         ),
